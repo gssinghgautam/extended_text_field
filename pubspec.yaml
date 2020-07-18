@@ -5,13 +5,15 @@ author: zmtzawqlp <zmtzawqlp@live.com>
 homepage: https://github.com/fluttercandies/extended_text_field
 
 environment:
-  sdk: ">=2.3.0 <3.0.0"
-  flutter: ">=1.17.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
-  extended_text_library: ^3.0.0
+  extended_text_library:
+    git: git@github.com:gssinghgautam/extended_text_library.git
+
+
 dev_dependencies:
   flutter_test:
     sdk: flutter

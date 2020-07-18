@@ -14,7 +14,7 @@ description: A new Flutter application.
 version: 1.0.0+1
 
 environment:
-  sdk: ">=2.6.0 <3.0.0"
+  sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
   flutter:
@@ -30,7 +30,8 @@ dependencies:
   loading_more_list: any
   url_launcher: 5.3.0
   oktoast: ^2.1.4
-  extended_text: ^3.0.0
+  extended_text:
+    git: git@github.com:gssinghgautam/extended_text.git
 dev_dependencies:
   flutter_test:
     sdk: flutter

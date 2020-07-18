@@ -28,6 +28,7 @@ class MyExtendedMaterialTextSelectionControls
     Offset selectionMidpoint,
     List<TextSelectionPoint> endpoints,
     TextSelectionDelegate delegate,
+      ClipboardStatusNotifier notifier,
   ) {
     assert(debugCheckHasMediaQuery(context));
     assert(debugCheckHasMaterialLocalizations(context));
@@ -64,7 +65,7 @@ class MyExtendedMaterialTextSelectionControls
           ),
           child: _TextSelectionToolbar(
           handleCut: canCut(delegate) ? () => handleCut(delegate) : null,
-          handleCopy: canCopy(delegate) ? () => handleCopy(delegate) : null,
+          handleCopy: canCopy(delegate) ? () => handleCopy(delegate, notifier) : null,
           handlePaste: canPaste(delegate) ? () => handlePaste(delegate) : null,
           handleSelectAll:
               canSelectAll(delegate) ? () => handleSelectAll(delegate) : null,
